@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="StahcCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <WorkerRole name="StahcCloudHost">
+    <ConfigurationSettings>
+      <Setting name="DiagnosticsConnectionString" />
+      <Setting name="QueueSleepTime" />
+      <Setting name="DataConnectionString" />
+      <Setting name="MaxJobLength" />
+      <Setting name="JobContainer" />
+      <Setting name="StachQueueName" />
+    </ConfigurationSettings>
+    <LocalResources>
+      <LocalStorage name="StahcScratch" cleanOnRoleRecycle="true" />
+    </LocalResources>
+  </WorkerRole>
+</ServiceDefinition>

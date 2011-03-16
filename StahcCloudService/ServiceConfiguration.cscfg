@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ServiceConfiguration serviceName="StahcCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration">
+  <Role name="StahcCloudHost">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="DiagnosticsConnectionString" value="DefaultEndpointsProtocol=https;AccountName=govornlcsmdgfdltest;AccountKey=/lCYh9/LpMwiu/1TRvtxWjNmRjcxwKoc9U9CHdMAGn6906D6rYUM8MAE0Mwp26WmaIMJRUbGGxGtGxmIOtb/8Q==" />
+      <Setting name="QueueSleepTime" value="60" />
+      <Setting name="DataConnectionString" value="DefaultEndpointsProtocol=http;AccountName=govornlcsmdgfdltest;AccountKey=/lCYh9/LpMwiu/1TRvtxWjNmRjcxwKoc9U9CHdMAGn6906D6rYUM8MAE0Mwp26WmaIMJRUbGGxGtGxmIOtb/8Q==" />
+      <Setting name="MaxJobLength" value="30" />
+      <Setting name="JobContainer" value="bubba05" />
+      <Setting name="StachQueueName" value="StachJobQueue" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
